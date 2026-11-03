@@ -184,6 +184,7 @@ s.append(table([
     ["Trình chiếu văn phòng", "PowerPoint (.pptx), PDF, Canva, chuỗi hình ảnh"],
     ["Kinh Thánh", "Zefania XML, OSIS, Beblia, OpenSong"],
 ], [45 * mm, 125 * mm]))
+s.append(P("<b>Lưu ý:</b> nút <b>Import</b> nằm trong một Project chỉ hiện PDF, PowerPoint, tệp văn bản và ChordPro, để thêm nhanh vào Project đang mở. Muốn thấy đầy đủ định dạng (ProPresenter, EasyWorship, OpenLP...), nhấn <b>Ctrl+I</b> hoặc bấm nút Import ở thẻ <b>Shows</b>.", note))
 s.append(P("5.3 Sắp xếp thứ tự đoạn (Layout)", h2))
 s += bullets([
     "Một bài hát có thể có nhiều <b>Layout</b>: ví dụ “Chúa nhật” (V1 – C – V2 – C – B – C) và “Ngắn” (V1 – C).",
@@ -273,6 +274,7 @@ s.append(table([
     ["Chữ tiếng Việt bị lỗi dấu", "Đổi sang font hỗ trợ tiếng Việt (Arial, Roboto, Be Vietnam Pro, Noto Sans); kiểm tra tệp import dùng mã UTF-8."],
     ["Điện thoại không vào được Remote", "Kiểm tra cùng mạng Wi-Fi, đúng địa chỉ IP và cổng; tường lửa (firewall) có thể đang chặn FreeShow."],
     ["Video giật, không có tiếng", "Dùng định dạng MP4 (H.264); kiểm tra thiết bị âm thanh xuất ra trong Cài đặt."],
+    ["Khung Import thiếu ProPresenter, EasyWorship...", "Do đang mở Import từ trong Project (chỉ có PDF, PowerPoint, văn bản, ChordPro). Nhấn Ctrl+I hoặc dùng nút Import ở thẻ Shows để thấy đủ định dạng."],
     ["Lỡ bấm sai slide", "Bấm lại slide đúng ngay, không cần xóa. Nếu cần tạm ẩn, nhấn F2."],
 ], [48 * mm, 122 * mm]))
 
