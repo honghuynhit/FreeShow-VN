@@ -1,6 +1,6 @@
 # Tài liệu huấn luyện FreeShow cho Hội Thánh
 
-- [FreeShow_Training_HoiThanh.pdf](FreeShow_Training_HoiThanh.pdf): tài liệu 6 trang (A4) cho chương trình đào tạo 4 buổi.
+- [FreeShow_Training_HoiThanh.pdf](FreeShow_Training_HoiThanh.pdf): tài liệu 7 trang (A4) cho chương trình đào tạo 4 buổi.
 - [make_pdf.py](make_pdf.py): script tạo lại file PDF bằng reportlab.
 - [FreeShow_Training_NangCao.pdf](FreeShow_Training_NangCao.pdf): tài liệu nâng cao 6 trang, 4 buổi A–D, dành cho người đã qua khóa cơ bản.
 - [make_pdf_nang_cao.py](make_pdf_nang_cao.py): script tạo lại PDF nâng cao.
@@ -20,7 +20,7 @@
 4. Buổi 3: Kinh Thánh, media, âm thanh, thông báo, Overlay
 5. Buổi 4: Stage, Remote, Controller, đồng hồ, nhiều màn hình, livestream
 6. Quy trình buổi thờ phượng, phím tắt, xử lý sự cố
-7. Bài tập thực hành, phân công vai trò, tài nguyên
+7. Bài tập thực hành, phân công vai trò, tài nguyên (kèm cách tìm tài nguyên tại freeshow.app/resources)
 
 ## Tạo lại PDF
 

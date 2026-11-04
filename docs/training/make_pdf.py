@@ -302,13 +302,27 @@ s += bullets([
     "Nên luân phiên để nhiều người cùng thành thạo, tránh phụ thuộc vào một người.",
 ])
 
+s.append(PageBreak())
+
+# ---------- Trang 7 ----------
 s.append(P("13. Tài nguyên tham khảo", h1))
 s += bullets([
     "Trang chủ & tải phần mềm: <b>freeshow.app</b>",
     "Hướng dẫn sử dụng chính thức: <b>freeshow.app/docs</b>",
     "Mã nguồn & báo lỗi: <b>github.com/ChurchApps/FreeShow</b>",
     "Cộng đồng hỗ trợ: Discord của FreeShow (liên kết trên trang chủ).",
+    "Kho tài nguyên (nền, Kinh Thánh, công cụ): <b>freeshow.app/resources</b>",
 ])
+s.append(P("13.1 Tìm tài nguyên tại freeshow.app/resources", h2))
+s.append(P("Trang này tổng hợp liên kết tới các trang bên ngoài, chia thành 3 nhóm. Trang không có ô tìm kiếm: chọn nhóm, bấm vào trang cần dùng rồi tìm và tải trên trang đó."))
+s.append(table([
+    ["Nhóm", "Trang tiêu biểu", "Cách đưa vào FreeShow"],
+    ["Hình / video nền", "Pexels, Pixabay, Unsplash (miễn phí, không cần ghi nguồn); CreationSwap, MotionBolt (ảnh Cơ Đốc miễn phí); MotionWorship, StoryLoop, Church Motion Graphics (có bản trả phí)", "Tải về thư mục media của Hội Thánh, rồi thêm thư mục đó vào thẻ <b>Media</b>"],
+    ["Video nền trên YouTube", "Kênh Motion Backgrounds của MotionBolt: <b>youtube.com/@motionbolt/videos</b>", "Chép đường dẫn video, dán vào thẻ <b>Media → Online (YouTube)</b>. Cần có Internet khi trình chiếu"],
+    ["Kinh Thánh", "Bible List (hơn 1.550 bản XML, có tìm kiếm), Zefania XML, OSIS trên GitHub", "Tìm bản tiếng Việt, tải tệp XML, rồi nhập ở thẻ <b>Kinh Thánh</b>"],
+    ["Công cụ", "FreeShow API, Bitfocus Companion (Stream Deck), font CMG Sans (có sẵn trong FreeShow), OBS, vMix", "Xem khóa nâng cao (Buổi A, B)"],
+], [30 * mm, 85 * mm, 55 * mm]))
+s.append(P("<b>Lưu ý:</b> kiểm tra giấy phép trước khi dùng hình/video, nhất là khi livestream lên Facebook/YouTube. Nên chọn video nền chuyển động chậm, tối màu để chữ dễ đọc. Video YouTube phụ thuộc vào mạng và có thể chèn quảng cáo, nên chạy thử trước giờ nhóm.", note))
 s.append(Spacer(1, 8))
 s.append(box(P("<b>Lời kết:</b> Trình chiếu là một mục vụ phục vụ — mục tiêu là giúp hội chúng tập trung thờ phượng Chúa, "
                "không phải gây chú ý vào màn hình. Chuẩn bị kỹ, giao diện đơn giản, chuyển slide đúng lúc là ba yếu tố quan trọng nhất.")))
