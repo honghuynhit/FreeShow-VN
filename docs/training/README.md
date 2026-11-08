@@ -4,6 +4,9 @@
 - [make_pdf.py](make_pdf.py): script tạo lại file PDF bằng reportlab.
 - [FreeShow_Training_NangCao.pdf](FreeShow_Training_NangCao.pdf): tài liệu nâng cao 6 trang, 4 buổi A–D, dành cho người đã qua khóa cơ bản.
 - [make_pdf_nang_cao.py](make_pdf_nang_cao.py): script tạo lại PDF nâng cao.
+- [FreeShow_Training_HoiThanh.show](FreeShow_Training_HoiThanh.show): bài trình chiếu khóa cơ bản (43 slide, có ảnh chụp giao diện và sơ đồ nhúng sẵn) để mở thẳng trong FreeShow. Import: thẻ Bản trình chiếu → Nhập → Show.
+- [make_show.py](make_show.py): script tạo lại file .show (chỉ cần Python 3).
+- [hinh/](hinh/): ảnh chụp giao diện (`anh-*.jpg`) và sơ đồ (`so-do-*.svg`, kèm bản `.png` đã dựng) dùng trong file .show.
 
 ## Nội dung khóa nâng cao
 

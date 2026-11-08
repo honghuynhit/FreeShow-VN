@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="720" viewBox="0 0 1680 720" font-family="Arial">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B6EA5"/><stop offset="1" stop-color="#14304F"/></linearGradient>
+  </defs>
+  <!-- Nền -->
+  <polygon points="220,400 860,400 720,570 80,570" fill="url(#bg)" stroke="#C9D3E0" stroke-width="3"/>
+  <circle cx="610" cy="450" r="26" fill="#F3D27A" opacity="0.8"/>
+  <polygon points="150,560 330,470 470,560" fill="#0E2238" opacity="0.8"/>
+  <polygon points="380,560 560,480 700,560" fill="#0E2238" opacity="0.6"/>
+  <!-- Slide -->
+  <polygon points="220,230 860,230 720,400 80,400" fill="#FFFFFF" fill-opacity="0.16" stroke="#FFFFFF" stroke-width="3"/>
+  <rect x="270" y="290" width="380" height="20" rx="10" fill="#FFFFFF" transform="skewX(-38) translate(240,0)"/>
+  <rect x="300" y="335" width="320" height="20" rx="10" fill="#FFFFFF" transform="skewX(-38) translate(270,0)"/>
+  <!-- Overlay -->
+  <polygon points="220,60 860,60 720,230 80,230" fill="#C8963E" fill-opacity="0.22" stroke="#C8963E" stroke-width="3"/>
+  <rect x="140" y="180" width="300" height="34" rx="6" fill="#C8963E" transform="skewX(-38) translate(140,0)"/>
+  <circle cx="770" cy="95" r="20" fill="#C8963E"/>
+  <!-- Labels -->
+  <g font-size="40" fill="#FFFFFF" font-weight="bold">
+    <rect x="930" y="110" width="96" height="64" rx="12" fill="#C8963E"/><text x="978" y="155" text-anchor="middle" fill="#1F3A5F">F3</text>
+    <text x="1056" y="140">Lớp phủ (Overlay)</text>
+    <rect x="930" y="280" width="96" height="64" rx="12" fill="#C8963E"/><text x="978" y="325" text-anchor="middle" fill="#1F3A5F">F2</text>
+    <text x="1056" y="310">Slide</text>
+    <rect x="930" y="450" width="96" height="64" rx="12" fill="#C8963E"/><text x="978" y="495" text-anchor="middle" fill="#1F3A5F">F1</text>
+    <text x="1056" y="480">Nền (Background)</text>
+    <rect x="930" y="610" width="96" height="64" rx="12" fill="#C8963E"/><text x="978" y="655" text-anchor="middle" fill="#1F3A5F">F4</text>
+    <text x="1056" y="655">Âm thanh</text>
+  </g>
+  <g font-size="28" fill="#C9D3E0">
+    <text x="1056" y="180">logo, tên người giảng, chữ chạy</text>
+    <text x="1056" y="350">lời bài hát, Kinh Thánh, chữ</text>
+    <text x="1056" y="520">hình ảnh, video, camera</text>
+    <text x="1290" y="655">nhạc nền, bài hát</text>
+  </g>
+  <!-- speaker -->
+  <g transform="translate(330,615)" fill="none" stroke="#C9D3E0" stroke-width="5" stroke-linecap="round">
+    <polygon points="0,20 24,20 52,0 52,64 24,44 0,44" fill="#C9D3E0" stroke="none"/>
+    <path d="M70 14 Q86 32 70 50"/><path d="M84 2 Q110 32 84 62"/>
+  </g>
+  <text x="470" y="660" font-size="30" fill="#FFFFFF"><tspan font-weight="bold" fill="#C8963E">Esc</tspan> = xóa tất cả</text>
+</svg>
