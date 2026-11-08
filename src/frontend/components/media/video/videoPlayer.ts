@@ -821,14 +821,13 @@ export class VideoPlayer {
     private static syncClockTimer: NodeJS.Timeout | null = null
 
     private static initSyncClock() {
-        if (this.syncClockTimer) clearInterval(this.syncClockTimer)
         this.syncState() // update immediately
-        this.syncClockTimer = setInterval(() => this.syncState(), get(special).optimizedMode ? 500 : 100)
+        if (!this.syncClockTimer && get(playingVideos).length > 0) {
+            this.syncClockTimer = setInterval(() => this.syncState(), get(special).optimizedMode ? 500 : 100)
+        }
     }
 
     private static syncState() {
-        let isPlaying = false
-
         playingVideoState.update((a) => {
             get(playingVideos).forEach((video) => {
                 const audio = video.audio
@@ -879,14 +878,12 @@ export class VideoPlayer {
                         isFadingOut: this.isFadingOut.includes(video.path)
                     }
                 })
-
-                if (!video.audio.paused) isPlaying = true
             })
 
             return a
         })
 
-        if (!isPlaying) {
+        if (get(playingVideos).length === 0) {
             if (this.syncClockTimer) {
                 clearInterval(this.syncClockTimer)
                 this.syncClockTimer = null
